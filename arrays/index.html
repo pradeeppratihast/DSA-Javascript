@@ -4,34 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        let arr = [10,8,9,4,7,2];
-        let new_element = 3;
-        let position = 6;
-        position -= 1;
-
-        console.log(arr);
-        for (let i = arr.length-1; i>=position; i--) {
-            if(i>=position)
-            {
-                arr[i+1] = arr[i];
-            }
-            if(i==position)
-            {
-                arr[i]=new_element;
-            }
-            console.log(i);
-            
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        console.log(arr);
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            row-gap: 10px;
+        }
+
+        label {
+            font-size: 20px;
+        }
         
-    </script>
+        input[type=text] {
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        input[type=button] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover {
+            background-color: #439647;
+        }
+
+        #data_display {
+            padding: 10px 20px;
+            font-size: 28px;
+            background-color: darkgrey;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <label for="element">Enter Element Number:</label>
     <input type="text" name="element" id="element">
     <label for="position">Enter Position Number:</label>
     <input type="text" name="position" id="position">
-    <input type="button" value="submit">
+    <input type="button" value="submit" id="submit">
+    <div id="data_display"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
