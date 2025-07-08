@@ -70,7 +70,7 @@ if (i == j) {
 console.log(arr); */
 
 // DELETE ELEMENT FROM AN ARRAY DYNAMIC VALUE
-const dataDisplay = document.getElementById("data_display");
+/* const dataDisplay = document.getElementById("data_display");
 const positionInput = document.getElementById("position");
 const submit = document.getElementById("submit");
 dataDisplay.innerText = arr;
@@ -93,4 +93,43 @@ submit.addEventListener("click", function () {
     }
   }
   dataDisplay.innerText = arr;
+}); */
+
+// SEARCH ELEMENT FROM AN ARRAY STATIC VALUE
+let search_element = 2;
+let flag = true;
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] == search_element) {
+    console.log(`Element position is on ${i + 1}`);
+    flag = false;
+    break;
+  }
+  console.log(i);
+}
+if (flag) {
+  console.log(`Element not in the array`);
+}
+
+// SEARCH ELEMENT FROM AN ARRAY DYNAMIC VALUE
+const dataDisplay1 = document.querySelector(".data_display1");
+const dataDisplay2 = document.querySelector(".data_display2");
+const elementInput = document.getElementById("element");
+const submit = document.getElementById("submit");
+dataDisplay1.innerText = arr;
+
+submit.addEventListener("click", function () {
+  const elementValue = parseInt(elementInput.value);
+  let flag = true;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == elementValue) {
+      dataDisplay2.innerText = `Element position is on ${i + 1}`;
+      flag = false;
+      break;
+    }
+  }
+  if (flag) {
+    dataDisplay2.innerText = "Element not in the array";
+  }
 });
