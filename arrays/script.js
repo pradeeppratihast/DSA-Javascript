@@ -1,7 +1,8 @@
 let arr = [10, 8, 9, 4, 7, 2];
 
 // PRINT INTO CONSOLE WITH STATIC VALUE
-/* let new_element = 3;
+/*
+let new_element = 3;
 let insert_position = 6;
 let i = arr.length - 1;
 insert_position -= 1;
@@ -20,10 +21,12 @@ if (i == insert_position) {
     console.log(i);
   }
 }
-console.log(arr); */
+console.log(arr);
+*/
 
 // INSERT WITH DYNAMIC VALUE
-/* const dataDisplay = document.getElementById("data_display");
+/*
+const dataDisplay = document.getElementById("data_display");
 const elementInput = document.getElementById("element");
 const positionInput = document.getElementById("position");
 const submit = document.getElementById("submit");
@@ -46,10 +49,12 @@ submit.addEventListener("click", function () {
     }
   }
   dataDisplay.innerText = arr;
-}); */
+});
+*/
 
 // DELETE ELEMENT FROM AN ARRAY STATIC VALUE
-/* let delete_position = 5;
+/*
+let delete_position = 5;
 delete_position -= 1;
 let i = delete_position;
 let j = arr.length - 1;
@@ -67,10 +72,12 @@ if (i == j) {
     console.log(i);
   }
 }
-console.log(arr); */
+console.log(arr);
+*/
 
 // DELETE ELEMENT FROM AN ARRAY DYNAMIC VALUE
-/* const dataDisplay = document.getElementById("data_display");
+/*
+const dataDisplay = document.getElementById("data_display");
 const positionInput = document.getElementById("position");
 const submit = document.getElementById("submit");
 dataDisplay.innerText = arr;
@@ -93,9 +100,11 @@ submit.addEventListener("click", function () {
     }
   }
   dataDisplay.innerText = arr;
-}); */
+});
+*/
 
 // SEARCH ELEMENT FROM AN ARRAY STATIC VALUE
+/*
 let search_element = 2;
 let flag = true;
 
@@ -110,8 +119,10 @@ for (let i = 0; i < arr.length; i++) {
 if (flag) {
   console.log(`Element not in the array`);
 }
+*/
 
 // SEARCH ELEMENT FROM AN ARRAY DYNAMIC VALUE
+/*
 const dataDisplay1 = document.querySelector(".data_display1");
 const dataDisplay2 = document.querySelector(".data_display2");
 const elementInput = document.getElementById("element");
@@ -133,3 +144,4 @@ submit.addEventListener("click", function () {
     dataDisplay2.innerText = "Element not in the array";
   }
 });
+*/
