@@ -32,7 +32,7 @@
   2. Omega Notation (Ω-naotation) - Best case complexity
   3. Theta Notation (Θ-naotation) - Average case complexity
 
-## Big-O Time Complexity
+## Big-O TIME COMPLEXITY
 
 **Big-O Time Complexity** helps describe the performance of an algorithm as the input size grows. It’s a crucial concept for evaluating how scalable and efficient your code is — especially in web development and algorithmic problem solving.
 
@@ -48,7 +48,7 @@
 | `O(2ⁿ)`      | Exponential — doubles with each input     | Recursive Fibonacci            |
 | `O(n!)`      | Factorial — all permutations              | Brute-force traveling salesman |
 
-## Space Complexity
+## SPACE COMPLEXITY
 
 **Space Complexity** refers to how much memory an algorithm uses based on the size of its input. It plays a vital role in building efficient programs, especially when dealing with large datasets or limited system resources.
 
@@ -66,3 +66,32 @@
 | `O(n²)`      | Quadratic space — nested structures         | 2D matrix                        |
 | `O(log n)`   | Logarithmic space — shallow recursion       | Binary search                    |
 | `O(n log n)` | Linearithmic — auxiliary storage in sorting | Merge sort                       |
+
+## OBJECTS - Big-O
+
+- An object is a collection of key value pairs
+  - Insert - O(1)
+  - Remove - O(1)
+  - Access - O(1)
+  - Search - O(n)
+  - Object.keys() - O(n)
+  - Object.values() - O(n)
+  - Object.entries() - O(n)
+
+## ARRAY - Big-O
+
+- An array is an ordered collection of values
+  - Insert / Remove at end - O(1)
+  - Insert / Remove at beginning - O(n)
+  - Access - O(1)
+  - Search - O(n)
+  - push / pop - O(1)
+  - shift / unshift / concat / slice / splice - O(n)
+  - forEach / map / filter / reduce - O(n)
+
+## Big-O GUIDE
+
+- Claculation not dependent on input size - O(1)
+  1. loop - O(n)
+  2. nested loop - O(n^2)
+  - Input size reduce by half - O(logn)
