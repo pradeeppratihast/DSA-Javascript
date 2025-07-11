@@ -47,3 +47,22 @@
 | `O(n²)`      | Quadratic — nested loops                  | Bubble sort, comparing pairs   |
 | `O(2ⁿ)`      | Exponential — doubles with each input     | Recursive Fibonacci            |
 | `O(n!)`      | Factorial — all permutations              | Brute-force traveling salesman |
+
+## Space Complexity
+
+**Space Complexity** refers to how much memory an algorithm uses based on the size of its input. It plays a vital role in building efficient programs, especially when dealing with large datasets or limited system resources.
+
+#### 📦 What Space Complexity Includes
+
+- **Fixed Part**: Constant memory usage for variables and instructions — independent of input size.
+- **Variable Part**: Dynamic memory that scales with input — like arrays, recursion stacks, or data structures.
+
+### Common Space Complexities
+
+| Complexity   | Description                                 | Example                          |
+| ------------ | ------------------------------------------- | -------------------------------- |
+| `O(1)`       | Constant space — fixed memory usage         | Swapping two variables           |
+| `O(n)`       | Linear space — memory grows with input      | Storing an array of `n` elements |
+| `O(n²)`      | Quadratic space — nested structures         | 2D matrix                        |
+| `O(log n)`   | Logarithmic space — shallow recursion       | Binary search                    |
+| `O(n log n)` | Linearithmic — auxiliary storage in sorting | Merge sort                       |
