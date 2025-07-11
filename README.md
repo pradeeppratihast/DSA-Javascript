@@ -36,7 +36,7 @@
 
 **Big-O Time Complexity** helps describe the performance of an algorithm as the input size grows. It’s a crucial concept for evaluating how scalable and efficient your code is — especially in web development and algorithmic problem solving.
 
-## Common Time Complexities
+### Common Time Complexities
 
 | Complexity   | Description                               | Example                        |
 | ------------ | ----------------------------------------- | ------------------------------ |
