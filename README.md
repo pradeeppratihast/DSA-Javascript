@@ -24,3 +24,10 @@
   5. Array findIndex()
   6. Array findLast()
   7. Array findLastIndex()
+
+## ASYMPTOTIC NOTATIONS
+
+- Mathematical tools to represent time and space complexity
+  1. Big-O Notation (O-naotation) - Worst case complexity
+  2. Omega Notation (Ω-naotation) - Best case complexity
+  3. Theta Notation (Θ-naotation) - Average case complexity
