@@ -31,6 +31,7 @@ factorial(5); // 120
 */
 
 // PRIME NUMBER
+/* 
 function isPrime(n) {
   if (n < 2) {
     return false;
@@ -48,3 +49,36 @@ console.log(isPrime(4)); // false
 console.log(isPrime(5)); // true
 console.log(isPrime(19)); // true
 // Big-O = O(sqrt(n))
+*/
+
+// POWER OF TWO
+function isPowerOfTwo(n) {
+  if (n < 1) {
+    return false;
+  }
+  while (n > 1) {
+    if (n % 2 !== 0) {
+      return false;
+    }
+    n = n / 2;
+  }
+  return true;
+}
+
+console.log(isPowerOfTwo(1)); // true
+console.log(isPowerOfTwo(2)); // true
+console.log(isPowerOfTwo(5)); // false
+// Big-O = O(logn)
+
+/* Optimize Solution */
+function isPowerOfTwoBitwise(n) {
+  if (n < 1) {
+    return false;
+  }
+  return (n & (n - 1)) === 0;
+}
+
+console.log(isPowerOfTwoBitwise(1)); // true
+console.log(isPowerOfTwoBitwise(2)); // true
+console.log(isPowerOfTwoBitwise(5)); // false
+// Big-O = O(1)
