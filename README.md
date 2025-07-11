@@ -52,7 +52,7 @@
 
 **Space Complexity** refers to how much memory an algorithm uses based on the size of its input. It plays a vital role in building efficient programs, especially when dealing with large datasets or limited system resources.
 
-#### 📦 What Space Complexity Includes
+#### What Space Complexity Includes
 
 - **Fixed Part**: Constant memory usage for variables and instructions — independent of input size.
 - **Variable Part**: Dynamic memory that scales with input — like arrays, recursion stacks, or data structures.
